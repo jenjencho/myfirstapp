@@ -1,6 +1,9 @@
+import 'package: myfirstapp/injection.dart';
 import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
 
 void main() {
+  configureInjection(Environment.prod);
   runApp(MyApp());
 }
 
@@ -52,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
      
       ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
+        
         // in the middle of the parent.
         child: Column(
 
